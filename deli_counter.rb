@@ -6,7 +6,7 @@ def line(array)
   else
     sentence = "The line is currently:"
     array.each_with_index do |name, index|
-      setence.push(" #{index+1}. #{name}")
+      sentence.push(" #{index+1}. #{name}")
     end
     return sentence
   end
@@ -27,7 +27,7 @@ def now_serving(array)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{array[0]}."
-    array.unshift
+    array.unshift!
   end
 end
 
