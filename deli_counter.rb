@@ -5,10 +5,8 @@ def line(array)
     puts "The line is currently empty."
   else
     sentence = "The line is currently:"
-    count = 1
-    array.each do |name|
-      setence.push(" #{count}. #{name}")
-      count+=1
+    array.each_with_index do |name, index|
+      setence.push(" #{index+1}. #{name}")
     end
     return sentence
   end
