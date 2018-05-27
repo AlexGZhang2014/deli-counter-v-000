@@ -7,7 +7,8 @@ def line(array)
     sentence = ["The line is currently: "]
     count = 1
     array.each do |name|
-      
+      setence.push(count.to_s)
+      sentence.push(name)
     end
   end
 end
