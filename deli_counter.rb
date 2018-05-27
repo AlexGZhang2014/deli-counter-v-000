@@ -8,7 +8,7 @@ def line(array)
     array.each_with_index do |name, index|
       sentence << " #{index+1}. #{name}"
     end
-    return sentence
+    puts sentence
   end
 end
 
